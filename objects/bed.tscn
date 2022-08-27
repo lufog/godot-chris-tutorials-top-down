@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjvhikf5ahiet"]
+
+[ext_resource type="Texture2D" uid="uid://dxjdy7kv7ry6v" path="res://assets/objects/basic_furniture.png" id="1_64kkm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mfxty"]
+size = Vector2(12, 15)
+
+[node name="Bed" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_64kkm")
+region_enabled = true
+region_rect = Rect2(0, 25, 16, 23)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_mfxty")
